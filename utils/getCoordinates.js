@@ -8,6 +8,7 @@ const getCoordinates = (address, callback) => {
 
   request({ url: geoSearchquery, json: true }, (error, response) => {
     if (error) {
+      console.log(error)
       callback("Unable to reach servers", undefined)
     } else if (response.body.features[0].length === 0) {
       callback("location not found", undefined)

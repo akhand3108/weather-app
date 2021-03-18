@@ -21,7 +21,7 @@ const getWeather = (lat, long, callback) => {
         weather +
         ". temp_max= " +
         temp_max +
-        "temp_min= " +
+        "  temp_min= " +
         temp_min +
         "  Humidity: " +
         humidity
