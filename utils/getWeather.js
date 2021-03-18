@@ -6,7 +6,7 @@ const getWeather = (lat, long, callback) => {
     lat +
     "&lon=" +
     long +
-    "&appid=55b9bbb85cb8de7bece9233cb01fbd29&units=metric"
+    "&appid=&units=metric"
 
   request({ url: weatherSearchQuery, json: true }, (error, response) => {
     if (error) {

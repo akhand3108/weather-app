@@ -4,7 +4,7 @@ const getCoordinates = (address, callback) => {
   const geoSearchquery =
     "https://api.mapbox.com/geocoding/v5/mapbox.places/" +
     encodeURIComponent(address) +
-    ".json?access_token=pk.eyJ1IjoiZGFya29wdGltdXMiLCJhIjoiY2ttZDMyMDh3MmhqZDJ5bzlpYjJyeDl4aCJ9.iHjEP7-1NfO_qJfh5-Xlvw"
+    ".json?access_token="
 
   request({ url: geoSearchquery, json: true }, (error, response) => {
     if (error) {
